@@ -1,10 +1,13 @@
 h1 { color: blue; }
 
 body{
-  background-color: grey;
+  background-color: white;
 }
 
 table{
   border: 15px solid black;
   padding: 50px;
+}
+.me{
+  color: red;
 }
