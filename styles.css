@@ -8,6 +8,12 @@ table{
   border: 15px solid black;
   padding: 50px;
 }
+
+ul{
+  border: 15px solid black;
+  padding: 50px;
+}
+
 .me{
   color: red;
 }
