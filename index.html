@@ -2,72 +2,44 @@
 <html>
   
   <head>
-    <link rel = "stylesheet" href = "styles.css">
-    <script src = "script.js"></script>
-    <title>
-      My Profile
-    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>My Profile</title>
   </head>
 
 <body>
-  
-  <h1>
-    Profile of Rakhatov Yerassyl 10"C"
-  </h1>
-  <p>
-    Hi, my name is Yerassyl and I'm 16 years old.
-  </p>  
-<img src = "Me.jpg"/>
-</body>
-<table>
-  <th> Name </th>
-  
-  <th> Age </th>
+  <h1 id="title">Profile of Rakhatov Yerassyl 10"C"</h1>
+  <p id="description">Hi, my name is Yerassyl and I'm 16 years old and welcome to my profile.</p>  
 
-  <th> Email </th>
+  <button onclick="changeLanguage('en')">English</button>
+  <button onclick="changeLanguage('ru')">Русский</button>
 
-  <tr>
-    <td> Yerassyl </td>
+  <img src="Me.jpg"/>
 
-    <td> 16 </td>
+  <table>
+    <tr>
+      <th id="name">Name</th>
+      <th id="age">Age</th>
+      <th id="email">Email</th>
+    </tr>
+    <tr>
+      <td id="name-value">Yerassyl</td>
+      <td id="age-value">16</td>
+      <td id="email-value">rahatoverasyl7@gmail.com</td>
+    </tr>
+  </table>
 
-    <td> rahatoverasyl7@gmail.com </td>
-    
-  </tr>
-  
-</table>
-
-  <ul class = "me">
-    <li>
-      Hard-working
-    </li>
-  
-  <li>
-    Punctual
-  </li>
-
-  <li>
-    Disciplined
-  </li>
-
-  <li>
-    Ambivert
-  </li>
-    
+  <ul class="me">
+    <li id="hardworking">Hard-working</li>
+    <li id="punctual">Punctual</li>
+    <li id="disciplined">Disciplined</li>
+    <li id="ambivert">Ambivert</li>
   </ul>
 
- <ol>
-   <li>
-     Elementary 2018
-   </li>
-
-   <li>
-     Middle 2024
-   </li>
-
-   <li>
-     High 2026
-   </li>
- </ol>
-  
+  <ol>
+    <li>Elementary 2018</li>
+    <li>Middle 2024</li>
+    <li>High 2026</li>
+  </ol>
+</body>
 </html>
