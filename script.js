@@ -23,7 +23,7 @@ function changeLanguage(language) {
         document.getElementById('email-value').textContent = 'rahatoverasyl7@gmail.com';
         document.getElementById('hardworking').textContent = 'Еңбекқор';
         document.getElementById('punctual').textContent = 'Пунктуалды';
-        document.getElementById('disciplined').textContent = 'Тәрбиелі';
+        document.getElementById('disciplined').textContent = 'Тәртіпті';
         document.getElementById('ambivert').textContent = 'Амбиверт';
     }
 }
