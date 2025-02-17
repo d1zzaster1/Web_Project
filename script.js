@@ -12,18 +12,18 @@ function changeLanguage(language) {
         document.getElementById('punctual').textContent = 'Punctual';
         document.getElementById('disciplined').textContent = 'Disciplined';
         document.getElementById('ambivert').textContent = 'Ambivert';
-    } else if(language === 'ru'){
-        document.getElementById('title').textContent = 'Профиль Рахатова Ерасыля 10\'С';
-        document.getElementById('description').textContent = 'Привет, меня зовут Ерасыля, мне 16 лет и добро пожаловать на мой профиль.';
-        document.getElementById('name').textContent = 'Имя';
-        document.getElementById('age').textContent = 'Возраст';
-        document.getElementById('email').textContent = 'Электронная почта';
-        document.getElementById('name-value').textContent = 'Ерасыля';
+    } else if(language === 'kz'){
+        document.getElementById('title').textContent = 'Профиль Рахатов Ерасыл 10\'С';
+        document.getElementById('description').textContent = 'Сәлем, менің атым Ерасыл, мен 16 жастамын және менің профильме қош келіңіз.';
+        document.getElementById('name').textContent = 'Аты';
+        document.getElementById('age').textContent = 'Жасы';
+        document.getElementById('email').textContent = 'Электронды почта';
+        document.getElementById('name-value').textContent = 'Ерасыл';
         document.getElementById('age-value').textContent = '16';
         document.getElementById('email-value').textContent = 'rahatoverasyl7@gmail.com';
-        document.getElementById('hardworking').textContent = 'Трудолюбивый';
-        document.getElementById('punctual').textContent = 'Пунктуальный';
-        document.getElementById('disciplined').textContent = 'Дисциплинированный';
+        document.getElementById('hardworking').textContent = 'Еңбекқор';
+        document.getElementById('punctual').textContent = 'Пунктуалды';
+        document.getElementById('disciplined').textContent = 'Тәрбиелі';
         document.getElementById('ambivert').textContent = 'Амбиверт';
     }
 }
