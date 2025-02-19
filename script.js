@@ -14,7 +14,7 @@ function changeLanguage(language) {
         document.getElementById('ambivert').textContent = 'Ambivert';
     } else if(language === 'ru'){
         document.getElementById('title').textContent = 'Профиль Рахатова Ерасыла 10\'С';
-        document.getElementById('description').textContent = 'Приве, меня зовут Рахатов Ерасыл, мне 16 лет и добро пожаловать на мой профиль.';
+        document.getElementById('description').textContent = 'Привет, меня зовут Рахатов Ерасыл, мне 16 лет и добро пожаловать на мой профиль.';
         document.getElementById('name').textContent = 'Имя';
         document.getElementById('age').textContent = 'Возраст';
         document.getElementById('email').textContent = 'Электронная почта';
