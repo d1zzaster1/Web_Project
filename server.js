@@ -1,0 +1,34 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+// Подключение к MongoDB (убедись, что MongoDB запущен)
+mongoose.connect('mongodb://localhost:27017/questionsDB', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+// Создание схемы и модели
+const questionSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    question: String,
+    date: { type: Date, default: Date.now }
+});
+
+const Question = mongoose.model('Question', questionSchema);
+
+// Маршрут для сохранения вопроса
+app.post('/api/questions', async (req, res) => {
+    const newQuestion = new Question(req.body);
+    await newQuestion.save();
+    res.json({ message: 'Your question has been saved!' });
+});
+
+// Запуск сервера
+app.listen(3000, () => console.log('Server is running on http://localhost:3000'));
