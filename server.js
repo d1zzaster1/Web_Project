@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Подключение к MongoDB (убедись, что MongoDB запущен)
-mongoose.connect('mongodb://localhost:27017/questionsDB', {
+mongoose.connect('mongodb://localhost:27017', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
