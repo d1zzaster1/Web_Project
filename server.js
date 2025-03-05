@@ -8,10 +8,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Подключение к MongoDB (убедись, что MongoDB запущен)
-mongoose.connect('mongodb://localhost:27017', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
+mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 // Создание схемы и модели
 const questionSchema = new mongoose.Schema({
@@ -25,6 +23,7 @@ const Question = mongoose.model('Question', questionSchema);
 
 // Маршрут для сохранения вопроса
 app.post('/api/questions', async (req, res) => {
+    console.log(req.body); // Выведет данные в консоль
     const newQuestion = new Question(req.body);
     await newQuestion.save();
     res.json({ message: 'Your question has been saved!' });
