@@ -4,6 +4,10 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
+app.use((req, res, next) => {
+    res.setHeader("Content-Security-Policy", "default-src 'self' http://localhost:3000");
+    next();
+});
 app.use(cors());
 app.use(bodyParser.json());
 
