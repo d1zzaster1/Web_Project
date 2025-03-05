@@ -34,6 +34,6 @@ app.post('/api/questions', async (req, res) => {
     await newQuestion.save();
     res.json({ message: 'Your question has been saved!' });
 });
-
+app.use(express.static('public'));
 // Запуск сервера
 app.listen(3000, () => console.log('Server is running on http://localhost:3000'));
