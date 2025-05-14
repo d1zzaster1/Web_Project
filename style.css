@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+input, textarea, button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 12px;
+  border-left: 4px solid #4CAF50;
+  white-space: pre-wrap;
+  border-radius: 6px;
+}
+
+mark {
+  background: yellow;
+  font-weight: bold;
+}
